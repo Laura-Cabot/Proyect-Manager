@@ -1,0 +1,207 @@
+[
+  {
+    "title": "Sistema de Gestion de Inventario",
+    "description": "Desarrollar una aplicación web para controlar stock, registrar movimientos de entrada y salida, y generar reportes automáticos de productos",
+    "deadline": "2025-10-12",
+    "priority": "media",
+    "createdAt": "2025-09-25T22:06:35.153Z",
+    "doc": "# Sistema de Gestión de Inventario 📦\n\nEste proyecto tiene como objetivo crear una **aplicación web moderna** que permita a empresas controlar de manera eficiente sus inventarios.\n\n## Objetivos principales\n- Reducir errores en el control de stock.  \n- Facilitar el registro de entradas y salidas de productos.  \n- Generar reportes automáticos en PDF y Excel.  \n- Ofrecer un panel de usuario simple e intuitivo.  \n\n## Funcionalidades previstas\n1. **Gestión de productos:** alta, baja y modificación de artículos.  \n2. **Movimientos de stock:** registro de entradas, salidas y transferencias.  \n3. **Control de usuarios y roles:** administrador, supervisor y operador.  \n4. **Reportes en tiempo real:** dashboard con métricas clave.  \n5. **Exportación de datos:** posibilidad de descargar reportes en PDF o Excel.  \n\n## Tecnologías sugeridas\n- **Frontend:** React + Bootstrap.  \n- **Backend:** Node.js + Express.  \n- **Base de datos:** MySQL o PostgreSQL.  \n- **Extras:** librerías de gráficos (Chart.js o Recharts).  \n\n## Próximos pasos\n- [ ] Configurar entorno de desarrollo.  \n- [ ] Diseñar esquema de base de datos.  \n- [ ] Implementar autenticación con JWT.  \n- [ ] Desarrollar prototipo inicial del panel de control.  \n\n---\n_Última actualización: Septiembre 2025_\n",
+    "tasks": [
+      {
+        "title": "Configurar base de datos inicial",
+        "status": "pendiente"
+      },
+      {
+        "title": "Implementar autenticación y roles de usuario",
+        "status": "en progreso"
+      },
+      {
+        "title": "Crear módulo de registro de entradas y salidas de stock",
+        "status": "pendiente"
+      },
+      {
+        "title": "Generar reportes PDF/Exel descargables",
+        "status": "pendiente"
+      }
+    ],
+    "status": "pendiente"
+  },
+  {
+    "title": "Landing Page Corporativa",
+    "description": "Diseñar y programar una página institucional moderna y responsive, con formulario de contacto, secciones de servicios y testimonios de clientes.",
+    "deadline": "2025-10-30",
+    "priority": "baja",
+    "createdAt": "2025-09-25T22:07:22.130Z",
+    "doc": "# Documentación del Proyecto: Landing Page Corporativa 🚀\n\n## Objetivo\nCrear una landing page profesional que represente la identidad de la empresa, con un diseño atractivo y optimizado para conversión.\n\n## Requerimientos principales\n- Diseño limpio y moderno, alineado con la marca.\n- Responsive en todos los dispositivos.\n- Secciones clave: Hero, Servicios, Testimonios, Contacto.\n- Optimización SEO y performance.\n- Integración de métricas con Google Analytics.\n\n## Flujo de trabajo\n1. Diseño → Wireframes y prototipos.\n2. Desarrollo → HTML, CSS, JavaScript (o framework elegido).\n3. Optimización → SEO, performance, accesibilidad.\n4. QA → Test en dispositivos reales.\n5. Deploy → Hosting + dominio.\n\n## Checklist\n- [ ] Header funcional y responsivo  \n- [ ] CTA principal visible  \n- [ ] Sección de servicios clara  \n- [ ] Testimonios agregados  \n- [ ] Formulario de contacto activo  \n- [ ] Deploy exitoso en servidor\n",
+    "tasks": [
+      {
+        "title": "Bocetar wireframes de página principal",
+        "status": "pendiente"
+      },
+      {
+        "title": "Definir paletas de colores y tipografia",
+        "status": "en progreso"
+      },
+      {
+        "title": "Maquetar el header con logo y menú responsive",
+        "status": "completado"
+      },
+      {
+        "title": "Formulario de contacto con validación",
+        "status": "pendiente"
+      },
+      {
+        "title": "Testear responsividad en móviles tablets",
+        "status": "en progreso"
+      }
+    ],
+    "status": "en progreso"
+  },
+  {
+    "title": "Plataforma de E-Learning",
+    "description": "Crear un sistema de cursos online con registro de usuarios, carga de materiales en PDF/video, y evaluaciones con calificación automática.",
+    "deadline": "2025-10-03",
+    "priority": "media",
+    "createdAt": "2025-09-25T22:08:04.397Z",
+    "doc": "# 🎓 Plataforma de E-learning\n\nEste proyecto tiene como objetivo construir una plataforma integral de educación en línea.\n\n## Funcionalidades principales\n- Registro de usuarios (estudiantes y profesores).\n- Subida de cursos con distintos tipos de contenido:\n  - Videos\n  - PDFs\n  - Cuestionarios interactivos\n- Sistema de búsqueda y filtrado por categorías.\n- Progreso de cursos y generación de certificados.\n- Módulo de pagos para cursos premium.\n\n## Tecnologías\n- **Frontend**: React + Bootstrap\n- **Backend**: Node.js + Express\n- **Base de datos**: MongoDB\n- **Autenticación**: JWT (JSON Web Tokens)\n- **Multimedia**: Cloud Storage (ej: AWS S3)\n\n## Objetivos\n1. Crear una plataforma escalable y segura para la educación online.\n2. Mejorar la experiencia de aprendizaje con herramientas interactivas.\n3. Ofrecer a los instructores un espacio para monetizar sus cursos.\n",
+    "tasks": [
+      {
+        "title": "Implementar sistema de registro e inicio de sesión",
+        "status": "en progreso"
+      },
+      {
+        "title": "Crear módulo de subida de cursos",
+        "status": "completado"
+      },
+      {
+        "title": "Desarrollar buscador y filtrado de cursos",
+        "status": "pendiente"
+      },
+      {
+        "title": "Habilitar pasarela de pagos para cursos premiun",
+        "status": "pendiente"
+      },
+      {
+        "title": "Diseñar sistema de pagos para cursos premium",
+        "status": "pendiente"
+      },
+      {
+        "title": "Diseñar sistema de progreso y certificaciones",
+        "status": "pendiente"
+      }
+    ],
+    "status": "completado"
+  },
+  {
+    "title": "Aplicación de Control Financiero",
+    "description": "Construir una app que permita a los usuarios registrar gastos, ingresos, establecer presupuestos mensuales y generar gráficos comparativos.",
+    "deadline": "2025-09-28",
+    "priority": "alta",
+    "createdAt": "2025-09-25T22:09:05.808Z",
+    "doc": "# 💰 Aplicación de Control Financiero\n\nEste proyecto busca desarrollar una herramienta que permita al usuario tener una visión clara de sus finanzas personales o empresariales.\n\n## Funcionalidades principales\n- Registro de **ingresos** y **gastos** con categorías personalizadas.\n- Visualización en un **dashboard interactivo** con gráficos y métricas clave.\n- Filtros por fechas y tipos de transacciones.\n- Balance automático y reportes descargables (PDF/Excel).\n- Alertas para controlar gastos excesivos.\n\n## Tecnologías\n- **Frontend**: React + Bootstrap (UI responsiva)\n- **Backend**: Node.js + Express\n- **Base de datos**: MongoDB / MySQL\n- **Gráficos**: Recharts o Chart.js\n- **Exportación**: Librerías para PDF/Excel (ej: jsPDF, SheetJS)\n\n## Objetivos\n1. Ofrecer una solución simple pero potente de control financiero.\n2. Mejorar la organización económica del usuario.\n3. Aprender integración de librerías externas (gráficos y exportación).\n",
+    "tasks": [
+      {
+        "title": "Diseñar el dashboard principal con gráficos de ingresos y gastos",
+        "status": "en progreso"
+      },
+      {
+        "title": "Implementar formularios para registrar ingres y egresos",
+        "status": "completado"
+      },
+      {
+        "title": "Implementar balance mensual automatico",
+        "status": "completado"
+      },
+      {
+        "title": "Configurar alertas de gastos que superan un límite definido",
+        "status": "en progreso"
+      },
+      {
+        "title": "Hacer pruebas en desktop y mobile para asegurar usabilidad",
+        "status": "pendiente"
+      }
+    ],
+    "status": "en progreso"
+  },
+  {
+    "title": "Sistema de Turnos Médicos Online",
+    "description": "Construir una app que permita a los usuarios registrar gastos, ingresos, establecer presupuestos mensuales y generar gráficos comparativos.",
+    "deadline": "2025-11-27",
+    "priority": "baja",
+    "createdAt": "2025-09-25T22:10:12.446Z",
+    "doc": "# Sistema de Turnos Médicos Online 🩺\n\n## Descripción General\nEste proyecto busca digitalizar la gestión de turnos médicos, reduciendo la carga administrativa y mejorando la experiencia del paciente.\n\n## Funcionalidades Clave\n- Registro de pacientes y médicos.  \n- Reserva, modificación y cancelación de turnos en línea.  \n- Agenda integrada con disponibilidad de profesionales.  \n- Envío de recordatorios automáticos por email y SMS.  \n\n## Objetivos\n- Reducir tiempos de espera en la atención.  \n- Minimizar errores administrativos.  \n- Mejorar la comunicación médico-paciente.  \n\n## Tecnologías Propuestas\n- **Frontend:** React + Bootstrap.  \n- **Backend:** Node.js + Express.  \n- **Base de datos:** MySQL o PostgreSQL.  \n- **Notificaciones:** Twilio (SMS) + Nodemailer (Email).  \n\n---\n",
+    "tasks": [
+      {
+        "title": "Diseñar el modelo de datos para pacientes, medicos y turnos",
+        "status": "completado"
+      },
+      {
+        "title": "Implementar la lógica de reserva y validación de horarios",
+        "status": "en progreso"
+      },
+      {
+        "title": "Configurar notificaciones automáticas (email/SMS)",
+        "status": "pendiente"
+      },
+      {
+        "title": "Crear panel de administración para médicos y secretarias",
+        "status": "pendiente"
+      }
+    ],
+    "status": "pendiente"
+  },
+  {
+    "title": "E-commerce de Ropa Urbana",
+    "description": "Desarrollar un catálogo de productos con carrito de compras, pasarela de pago integrada y gestión de pedidos desde el panel de administrador.",
+    "deadline": "2025-10-11",
+    "priority": "media",
+    "createdAt": "2025-09-25T22:10:56.882Z",
+    "doc": "# 🛒 Proyecto E-commerce Básico\n\nEste proyecto consiste en el desarrollo de una tienda en línea que permita:\n\n- Explorar productos mediante un catálogo navegable.\n- Añadir productos al carrito en tiempo real.\n- Completar compras con un flujo de checkout seguro.\n- Administrar productos desde un panel básico (CRUD).\n\n## Tecnologías principales\n- **Frontend**: React + Bootstrap\n- **Backend**: Node.js + Express\n- **Base de datos**: JSON local o MySQL\n- **Deploy**: Render (backend) + Netlify (frontend)\n\n## Objetivos\n1. Practicar integración frontend-backend.\n2. Simular un flujo de compra real.\n3. Desarrollar buenas prácticas de arquitectura en proyectos web.\n",
+    "tasks": [
+      {
+        "title": "Diseñar mockups iniciales de la tienda",
+        "status": "pendiente"
+      },
+      {
+        "title": "Configurar base de datos de productos",
+        "status": "pendiente"
+      },
+      {
+        "title": "Implementar listado de productos con filtros por categoria",
+        "status": "pendiente"
+      },
+      {
+        "title": "Crear carrito dinámico con actualización en tiempo real",
+        "status": "pendiente"
+      },
+      {
+        "title": "Testear flujos de compra en desktop y mobile",
+        "status": "pendiente"
+      }
+    ],
+    "status": "pendiente"
+  },
+  {
+    "title": "Dashboard de Analítica Web",
+    "description": "Crear un panel con métricas clave (usuarios activos, ventas, conversiones) y visualizaciones interactivas con gráficos y filtros dinámicos",
+    "deadline": "2025-10-01",
+    "priority": "alta",
+    "createdAt": "2025-09-25T22:13:38.437Z",
+    "doc": "# Documentación 🚀\n\nDescribe aquí el proyecto...",
+    "tasks": [
+      {
+        "title": "Conectar el dashboard con Google Analytics y otras fuentes",
+        "status": "completado"
+      },
+      {
+        "title": "Diseñar visualizaciones interactivas (gráficos y tablas dinámicas)",
+        "status": "en progreso"
+      },
+      {
+        "title": "Implementar filtros por rango de fechas, campañas y usuarios",
+        "status": "pendiente"
+      }
+    ],
+    "status": "pendiente"
+  }
+]
