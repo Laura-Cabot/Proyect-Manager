@@ -18,22 +18,35 @@ function App() {
   const [filterStatus, setFilterStatus] = useState("");
   const [filterPriority, setFilterPriority] = useState("");
 
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem("projects");
-      if (saved) {
-        setProjects(JSON.parse(saved));
+ useEffect(() => {
+  try {
+    const saved = localStorage.getItem("projects");
+    if (saved) {
+      setProjects(JSON.parse(saved));
+    } else {
+      const backup = localStorage.getItem("projects-backup");
+      if (backup) {
+        setProjects(JSON.parse(backup));
       } else {
-        const backup = localStorage.getItem("projects-backup");
-        if (backup) {
-          setProjects(JSON.parse(backup));
-        }
+        // 👉 Cargar desde /backup.json
+        fetch("/backup.json")
+          .then((res) => res.json())
+          .then((data) => {
+            setProjects(data);
+            localStorage.setItem("projects", JSON.stringify(data));
+            localStorage.setItem("projects-backup", JSON.stringify(data));
+          })
+          .catch((err) =>
+            console.error("❌ Error cargando backup.json:", err)
+          );
       }
-    } catch (err) {
-      console.error("❌ Error leyendo localStorage:", err);
-      setProjects([]);
     }
-  }, []);
+  } catch (err) {
+    console.error("❌ Error leyendo localStorage:", err);
+    setProjects([]); // fallback vacío
+  }
+}, []);
+
 
   useEffect(() => {
     if (projects.length > 0) {
