@@ -1,0 +1,47 @@
+#root {
+  min-height: 100%;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  background-attachment: fixed;
+  color: #f8f9fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.project-card {
+  background: #f4f4f4;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.navbar {
+  min-height: 70px;
+  padding: 0.8rem 1.5rem;
+  background-color: #1f2a35;
+  border-bottom: 2px solid #4ca1af;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  font-size: large;
+}
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #f8f9fb;
+}
+.navbar .nav-link {
+  color: #f0f0f0;
+}
+.navbar .nav-link.active {
+  font-weight: 700;
+  color: #4ca1af !important;
+}
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+

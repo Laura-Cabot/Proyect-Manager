@@ -1,0 +1,20 @@
+.card-shadow {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.row.mb-3.align-items-stretch>.col-md-6>.card {
+  padding: 1rem;
+  min-height: auto;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(226, 231, 241, 0.932);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.card h5, .card h6 {
+  color: #2c3e50; /* gris oscuro elegante */
+  font-weight: 600;
+}
+

@@ -1,0 +1,87 @@
+.portada {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portada::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.contenido h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(270deg, #00f0ff, #ff00f0, #00ff88);
+  background-size: 600% 600%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 6s ease infinite;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.6),
+    0 0 40px rgba(255, 0, 255, 0.5);
+  margin-bottom: 1rem;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contenido p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.7);
+  margin-bottom: 2rem;
+}
+
+.btn-futurista {
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.6);
+}
+
+.btn-futurista:hover {
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.9);
+}

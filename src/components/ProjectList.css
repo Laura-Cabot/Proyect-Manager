@@ -1,0 +1,106 @@
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-card .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #111111;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+  min-height: 50px;
+}
+
+.project-footer {
+  border-top: 1px solid #eee;
+  padding-top: 0.5rem;
+  gap: 0.5rem;
+}
+
+.state-badge,
+.priority-badge {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+}
+
+.project-divider {
+  height: 4px;
+  margin: 10px;
+  border-radius: 4px 4px 0 0;
+ }
+.project-list-divider {
+  height: 4px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #6c5ce7, #00cec9);
+}
+ 
+.divider-pendiente {
+  background-color: #82817d;
+}
+.divider-progreso {
+  background-color: #0dcaf0;
+}
+
+.divider-completado {
+  background-color: #198754;
+}
+
+.state-button {
+  padding: 0.25rem 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 6px;
+}
+
+.delete-button {
+  padding: 0.25rem 0.45rem;
+  line-height: 1;
+  min-width: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-footer .d-flex {
+  gap: 0.5rem;
+}
+
+.card.project-card {
+  background-color: rgba(226, 231, 241, 0.932);
+  border: 4px solid #69084c;
+  border-radius: 10px;
+}
+
+.project-card.por-vencer {
+  background-color: #f5ececf1;
+  border: 5px solid #da3122;
+}
+
+.project-detail-card {
+  background-color: #f4f7f8;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-card h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.project-detail-card p {
+  margin-bottom: 0.5rem;
+}
