@@ -172,6 +172,52 @@ function App() {
     });
   };
 
+  // 📤 Exportar proyectos
+  const exportProjects = () => {
+    try {
+      const data = JSON.stringify(projects, null, 2);
+      const blob = new Blob([data], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "backup.json";
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error("❌ Error exportando proyectos:", err);
+    }
+  };
+
+  // 📥 Importar proyectos
+  const importProjects = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      try {
+        const imported = JSON.parse(event.target.result);
+        if (Array.isArray(imported)) {
+          setProjects(imported);
+          Swal.fire({
+            icon: "success",
+            title: "Importado",
+            text: "Tus proyectos fueron importados 🎉",
+            timer: 2000,
+            showConfirmButton: false,
+          });
+        } else {
+          Swal.fire("Error", "El archivo no contiene proyectos válidos", "error");
+        }
+      } catch (err) {
+        Swal.fire("Error", "No se pudo leer el archivo", "error");
+        console.error("❌ Error importando proyectos:", err);
+      }
+    };
+    reader.readAsText(file);
+  };
+
   const q = (search || "").toLowerCase();
   const fStatus = filterStatus || "";
   const fPriority = (filterPriority || "").toString().toLowerCase();
@@ -194,7 +240,12 @@ function App() {
 
   return (
     <>
-      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Navbar
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        exportProjects={exportProjects}
+        importProjects={importProjects}
+      />
 
       {activeTab === "home" && (
         <Portada onLogin={() => setActiveTab("projects")} />
